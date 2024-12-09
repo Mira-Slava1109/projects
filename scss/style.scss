@@ -1,0 +1,13 @@
+.block {
+   background-color: #fff;
+   // .block__item
+   &__item {
+      font-size: 30px;
+   }
+}
+.item {
+   // .item__body
+   &__body {
+      margin: 30px 4px 0px 0px;
+   }
+}
