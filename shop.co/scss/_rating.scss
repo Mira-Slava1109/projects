@@ -1,0 +1,45 @@
+
+$star-full-icon: url('../img/products/star-icon/star-full.svg');
+.rating{
+  display: inline-flex;
+  align-items: flex-end;
+  column-gap: toRem(13);
+}
+.rating__body {
+  display: inline-flex;
+  gap: toRem(6);
+  position: relative;
+  font-size: 0;
+}
+
+.rating__item {
+  display: inline-block;
+  width: toRem(23);
+  height: toRem(23);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-image: $star-full-icon; // За замовчуванням використовуємо повну зірку
+}
+
+.rating__item--empty {
+ -image: url('../img/products/star-empty.svg'); // Якщо потрібна окрема пуста зірка
+}
+
+.rating__item--half {
+  width: calc(toRem(23) / 2); // Встановлюємо ширину в половину для половинчастої
+  background-image: $star-full-icon; // Все одно використовуємо повну зірку
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.rating__item--full {
+  // Можна залишити порожнім, оскільки .rating__item вже має повну зірку як фон
+}
+.rating__value{
+  font-size: toRem(14);
+  span{
+    opacity: 0.6;
+  }
+}

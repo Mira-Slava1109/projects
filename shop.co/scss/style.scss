@@ -1,0 +1,84 @@
+@use "sass:math";
+
+@import "_icons.scss";
+
+@import "_fonts.scss";
+
+@import "_reset.scss";
+
+@import "_mixins.scss";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1440;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1240;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$backgroundColor: #fff;
+$mainColor: #000;
+$greyColor: rgb(0, 0, 0, 0.6);
+$greyLightColor: rgb(0, 0, 0, 0.1);
+$fontMain: "Satoshi";
+
+$tablet: toEm(991.98);
+$mobile: toEm(767.98);
+$mobileSmall: toEm(450);
+
+$border: toRem(1) solid rgba(0, 0, 0, 0.1);
+
+body {
+  font-family: $fontMain;
+  color: $mainColor;
+  background-color: $backgroundColor;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: toPx($containerWidth);
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+// Лічильник для списку
+%listCounter {
+  list-style-type: none;
+  counter-reset: item;
+  li {
+    position: relative;
+    &:before {
+      counter-increment: item;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@import "_header.scss";
+
+@import "_main.scss";
+
+@import "_footer.scss";
+
+@import "_cart.scss";
+
+@import "_product.scss";
+
+@import "_category.scss";
+
+@import "_commons.scss";
+
+@import "_rating.scss";
