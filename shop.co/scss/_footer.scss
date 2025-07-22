@@ -13,7 +13,6 @@
   // .footer__container
   &__container {
     position: relative;
-    z-index: 3;
   }
   // .footer__subscribe
   &__subscribe {
@@ -33,12 +32,12 @@
   @include adaptiveValue("padding-block", 43, 32);
   @include adaptiveValue("padding-inline", 64, 24);
   border-radius: toRem(20);
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     grid-template-columns: auto;
   }
   // .subscribe-footer__title
   &__title {
-    @media (max-width:$tablet){
+    @media (max-width: $tablet) {
       text-align: center;
     }
   }
@@ -46,7 +45,7 @@
   &__form {
     width: 100%;
     justify-self: end;
-    @media (max-width:$tablet){
+    @media (max-width: $tablet) {
       justify-self: center;
     }
   }
@@ -98,7 +97,7 @@
   grid-template-columns: 20.16129% 1fr;
   @include adaptiveValue("column-gap", 112, 70, 0, $containerWidth, 991.98);
   row-gap: toRem(30);
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     grid-template-columns: auto;
   }
   // .body-footer__content
@@ -142,11 +141,11 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s;
-    @media (any-hover: hover){
-      &:hover{
+    @media (any-hover: hover) {
+      &:hover {
         background-color: #000;
         border: none;
-        .action-footer__link::before{
+        .action-footer__link::before {
           color: #fff;
         }
       }
@@ -154,7 +153,7 @@
   }
   // .action-footer__link
   &__link {
-    &::before{
+    &::before {
       transition: color 0.5s;
       font-size: toRem(13);
     }
@@ -166,11 +165,11 @@
   justify-content: space-between;
   column-gap: toRem(20);
   row-gap: toRem(30);
-  @media (max-width:$mobile){
-  grid-template-columns: repeat(2, 1fr);
-  text-align: center;
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
   }
-  @media (max-width: toEm(600)){
+  @media (max-width: toEm(600)) {
     grid-template-columns: 1fr;
     row-gap: toRem(20);
   }
@@ -190,31 +189,31 @@
       display: none;
     }
     ._init & {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: row-reverse;
-			gap: toRem(25);
-			@media (max-width: toEm(600)) {
-				background-color: $greyLightColor;
-				padding-block: toRem(10);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      gap: toRem(25);
+      @media (max-width: toEm(600)) {
+        background-color: $greyLightColor;
+        padding-block: toRem(10);
         border-radius: toRem(8);
-			}
-			&::before {
-				display: block;
+      }
+      &::before {
+        display: block;
         position: absolute;
         inset-block-start: 50%;
         transform: translateY(-50%);
         inset-inline-end: toRem(10);
-				transition: transform 0.3s;
-				font-size: toRem(14);
-			}
-		}
-		._init[open] & {
-			&::before {
-				transform: scale(1, -1) translateY(50%);
-			}
-		}
+        transition: transform 0.5s;
+        font-size: toRem(14);
+      }
+    }
+    &.active {
+      &::before {
+        transform: scale(1, -1) translateY(50%);
+      }
+    }
   }
   // .menu-footer__list
   &__list {
@@ -226,6 +225,11 @@
     &:not(:last-child) {
       margin-block-end: toRem(15);
     }
+    @media (any-hover: hover) {
+      &:hover .menu-footer__link::before {
+        inline-size: 100%;
+      }
+    }
   }
   // .menu-footer__link
   &__link {
@@ -233,8 +237,8 @@
     color: $greyColor;
     position: relative;
     padding-block-end: toRem(4);
-    &::before{
-      content:'';
+    &::before {
+      content: "";
       inline-size: 0;
       block-size: toRem(1);
       background-color: #000;
@@ -242,13 +246,6 @@
       inset-block-end: 0;
       inset-inline-start: 0;
       transition: inline-size 0.5s;
-    }
-    @media (any-hover: hover){
-      &:hover{
-        &::before{
-          inline-size: 100%;
-        }
-      }
     }
   }
 }
@@ -263,7 +260,7 @@
   gap: toRem(20);
   align-items: center;
   justify-content: space-between;
-  @media (max-width:$mobile){
+  @media (max-width: $mobile) {
     flex-direction: column;
     justify-content: center;
   }
@@ -290,7 +287,7 @@
     img {
       max-width: 100%;
     }
-    @media (max-width:$mobileSmall){
+    @media (max-width: $mobileSmall) {
       inline-size: toRem(40);
       block-size: toRem(25);
     }

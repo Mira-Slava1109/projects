@@ -1,16 +1,11 @@
+// .header
 .header {
-  position: fixed;
-  inset-inline-start: 0;
-  inset-block-start: 0;
-  inline-size: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 20;
   background-color: #fff;
-  &::before {
-    content: "";
-    position: fixed;
-    inline-size: 100%;
-    background-color: #fff;
-  }
   // .header__sign-up
   &__sign-up {
   }
@@ -19,11 +14,18 @@
   }
 }
 .sign-up {
-  transition: height 0.5s;
+  transition: max-height 0.5s;
   background-color: #000;
   overflow: hidden;
   position: relative;
-  z-index: 3;
+  z-index: 4;
+  max-height: toRem(80);
+  pointer-events: auto;
+  
+  &.hidden {
+    max-height: 0;
+    pointer-events: none;
+  }
   // .sign-up__container
   &__container {
     display: flex;
@@ -74,7 +76,11 @@
     }
   }
 }
+
 .main-header {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 3;
   // .main-header__container
   &__container {
     padding-block: toRem(24);
@@ -118,19 +124,16 @@
 }
 .menu {
   position: relative;
-  @media (max-width: toEm(899.98)) {
+  @media (max-width: toEm(900)) {
     position: fixed;
-    inset-block-start: 0;
+    inset-block-start: var(--header-height);
     inset-inline-start: -100%;
     inline-size: 100%;
     block-size: 100%;
-    padding: toRem(142) toRem(20) toRem(40);
+    padding: toRem(20) toRem(40);
     overflow: auto;
     background-color: #f0f0f0;
-    transition: 0.5s;
-    .hidden & {
-      padding: toRem(112) toRem(20) toRem(40);
-    }
+    transition: all 0.5s;
     &::before {
       content: "";
       position: fixed;
@@ -224,9 +227,6 @@
       background-color: $mainColor;
       color: #fff;
       border-radius: toRem(12);
-      // .open & {
-      //   box-shadow: 0 toRem(4) toRem(15) rgba(0, 0, 0, 0.216);
-      // }
     }
     @media (max-width: toEm(899.98)) {
       font-size: toRem(20);

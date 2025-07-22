@@ -94,156 +94,206 @@
             <aside class="body-category__filter filter">
               <div class="filter__header">
                 <div class="filter__title">Filters</div>
-                <button class="filter__button _icon-filter"></button>
+                <div class="filter__buttons">
+                  <div class="filter__icon _icon-filter"></div>
+                  <button class="filter__button _icon-cross"></button>
+                </div>
               </div>
-              <ul class="filter__list">
-                <li class="filter__item">
-                  <a href="#" class="filter__link">T-shirts<span class="_icon-more-arrow"></span></a>
-                </li>
-                <li class="filter__item">
-                  <a href="#" class="filter__link">Shorts<span class="_icon-more-arrow"></span></a>
-                </li>
-                <li class="filter__item">
-                  <a href="#" class="filter__link">Shirts<span class="_icon-more-arrow"></span></a>
-                </li>
-                <li class="filter__item">
-                  <a href="#" class="filter__link">Hoodie<span class="_icon-more-arrow"></span></a>
-                </li>
-                <li class="filter__item">
-                  <a href="#" class="filter__link">Jeans<span class="_icon-more-arrow"></span></a>
-                </li>
-              </ul>
-              <form data-spollers action="#" class="filter__body body-filter">
-                <details data-spoller open class="body-filter__item item-filter">
-                  <summary data-spoller-item class="item-filter__header">
-                    <div class="item-filter__title">Price</div>
-                    <span class="_icon-more-arrow"></span>
-                  </summary>
-                  <div class="item-filter__content">
-                    <div class="item-filter__body">
-                      <div class="filter-price">
-                        <div class="filter-price__range"></div>
-                      </div>
-                    </div>
-                  </div>
-                </details>
-                <details data-spoller open class="body-filter__item item-filter">
-                  <summary data-spoller-item class="item-filter__header">
-                    <div class="item-filter__title">Colors</div>
-                    <div class="_icon-more-arrow"></div>
-                  </summary>
-                  <div class="item-filter__content">
-                    <div class="item-filter__body">
-                      <div class="item-filter__color color-product">
-                        <div class="color-product__items items-option">
-                          <label class="color-product__item">
-                            <input class="color-product__input" type="radio" name="color" checked />
-                          </label>
-                          <label class="color-product__item">
-                            <input class="color-product__input" type="radio" name="color" />
-                          </label>
-                          <label class="color-product__item">
-                            <input class="color-product__input" type="radio" name="color" />
-                          </label>
+              <div class="filter__content">
+                <ul class="filter__list">
+                  <li class="filter__item">
+                    <a href="#" class="filter__link">T-shirts<span class="_icon-more-arrow"></span></a>
+                  </li>
+                  <li class="filter__item">
+                    <a href="#" class="filter__link">Shorts<span class="_icon-more-arrow"></span></a>
+                  </li>
+                  <li class="filter__item">
+                    <a href="#" class="filter__link">Shirts<span class="_icon-more-arrow"></span></a>
+                  </li>
+                  <li class="filter__item">
+                    <a href="#" class="filter__link">Hoodie<span class="_icon-more-arrow"></span></a>
+                  </li>
+                  <li class="filter__item">
+                    <a href="#" class="filter__link">Jeans<span class="_icon-more-arrow"></span></a>
+                  </li>
+                </ul>
+                <form data-spollers action="#" class="filter__body body-filter">
+                  <details data-spoller open class="body-filter__item item-filter">
+                    <summary data-spoller-item class="item-filter__header">
+                      <div class="item-filter__title">Price</div>
+                      <span class="_icon-more-arrow"></span>
+                    </summary>
+                    <div class="item-filter__content">
+                      <div class="item-filter__body">
+                        <div class="filter-price">
+                          <div class="filter-price__range"></div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </details>
-                <details data-spoller open class="body-filter__item item-filter">
-                  <summary data-spoller-item class="item-filter__header">
-                    <div class="item-filter__title">Size</div>
-                    <div class="_icon-more-arrow"></div>
-                  </summary>
-                  <div class="item-filter__content">
-                    <div class="item-filter__body">
-                      <div class="item-filter__size size-product">
-                        <div class="size-product__items items-option">
-                          <label class="size-product__item">
-                            <input class="size-product__input" type="radio" name="size" />
-                            <span>Small</span>
-                          </label>
-                          <label class="size-product__item">
-                            <input class="size-product__input" type="radio" name="size" />
-                            <span>Medium</span>
-                          </label>
-                          <label class="size-product__item">
-                            <input class="size-product__input" type="radio" name="size" checked />
-                            <span>Large</span>
-                          </label>
-                          <label class="size-product__item">
-                            <input class="size-product__input" type="radio" name="size" />
-                            <span>X-Large</span>
-                          </label>
+                  </details>
+                  <details data-spoller open class="body-filter__item item-filter">
+                    <summary data-spoller-item class="item-filter__header">
+                      <div class="item-filter__title">Colors</div>
+                      <div class="_icon-more-arrow"></div>
+                    </summary>
+                    <div class="item-filter__content">
+                      <div class="item-filter__body">
+                        <div class="item-filter__color color-product">
+                          <div class="color-product__items items-option">
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" checked />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                            <label class="color-product__item">
+                              <input class="color-product__input" type="radio" name="color" />
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </details>
-                <details data-spoller open class="body-filter__item item-filter">
-                  <summary data-spoller-item class="item-filter__header">
-                    <div class="item-filter__title">Dress Style</div>
-                    <div class="_icon-more-arrow"></div>
-                  </summary>
-                  <div class="item-filter__content">
-                    <div class="item-filter__body">
-                      <ul class="filter__list">
-                        <li class="filter__item">
-                          <a href="#" class="filter__link">T-shirts<span class="_icon-more-arrow"></span></a>
-                        </li>
-                        <li class="filter__item">
-                          <a href="#" class="filter__link">Shorts<span class="_icon-more-arrow"></span></a>
-                        </li>
-                        <li class="filter__item">
-                          <a href="#" class="filter__link">Shirts<span class="_icon-more-arrow"></span></a>
-                        </li>
-                        <li class="filter__item">
-                          <a href="#" class="filter__link">Hoodie<span class="_icon-more-arrow"></span></a>
-                        </li>
-                        <li class="filter__item">
-                          <a href="#" class="filter__link">Jeans<span class="_icon-more-arrow"></span></a>
-                        </li>
-                      </ul>
+                  </details>
+                  <details data-spoller open class="body-filter__item item-filter">
+                    <summary data-spoller-item class="item-filter__header">
+                      <div class="item-filter__title">Size</div>
+                      <div class="_icon-more-arrow"></div>
+                    </summary>
+                    <div class="item-filter__content">
+                      <div class="item-filter__body">
+                        <div class="item-filter__size size-product">
+                          <div class="size-product__items items-option">
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>XX-Small</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>X-Small</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>Small</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>Medium</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" checked />
+                              <span>Large</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>X-Large</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>XX-Large</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>3X-Large</span>
+                            </label>
+                            <label class="size-product__item size-product__item--small">
+                              <input class="size-product__input" type="radio" name="size" />
+                              <span>4X-Large</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </details>
-                <button class="body-filter__button button">Apply Filter</button>
-              </form>
+                  </details>
+                  <details data-spoller open class="body-filter__item item-filter">
+                    <summary data-spoller-item class="item-filter__header">
+                      <div class="item-filter__title">Dress Style</div>
+                      <div class="_icon-more-arrow"></div>
+                    </summary>
+                    <div class="item-filter__content">
+                      <div class="item-filter__body">
+                        <ul class="filter__list">
+                          <li class="filter__item">
+                            <a href="#" class="filter__link">Casual<span class="_icon-more-arrow"></span></a>
+                          </li>
+                          <li class="filter__item">
+                            <a href="#" class="filter__link">Formal<span class="_icon-more-arrow"></span></a>
+                          </li>
+                          <li class="filter__item">
+                            <a href="#" class="filter__link">Party<span class="_icon-more-arrow"></span></a>
+                          </li>
+                          <li class="filter__item">
+                            <a href="#" class="filter__link">Gym<span class="_icon-more-arrow"></span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </details>
+                  <button class="body-filter__button button">Apply Filter</button>
+                </form>
+              </div>
             </aside>
             <div class="body-category__content">
               <div class="body-category__header header-body-category">
-                <h3 class="header-body-category__title">Casual</h3>
-                <div class="header-body-category__sort sort-header">
-                  <div class="sort-header__quantity">Showing 1-10 of 100 Products</div>
-                  <div class="sort-header__select select-sort-header">
-                    <span>Sort by:</span>
-                    <button
-                      class="select-sort-header__current"
-                      type="button"
-                      aria-haspopup="listbox"
-                      aria-expanded="false"
-                      aria-controls="sortOptionsList"
-                    >
-                      Most Popular<span class="_icon-more-arrow"></span>
-                    </button>
-                    <ul class="select-sort-header__list" hidden>
-                      <li class="select-sort-header__item">
-                        <a href="#" class="select-sort-header__link">Most Popular</a>
-                      </li>
-                      <li class="select-sort-header__item">
-                        <a href="#" class="select-sort-header__link">Сheapest Products</a>
-                      </li>
-                      <li class="select-sort-header__item">
-                        <a href="#" class="select-sort-header__link">latest products</a>
-                      </li>
-                    </ul>
+                <div class="header-body-category__wrapper">
+                  <h3 class="header-body-category__title">Casual</h3>
+                  <div class="header-body-category__sort sort-header">
+                    <div class="sort-header__quantity">Showing 1-10 of 100 Products</div>
+                    <div class="sort-header__select select-sort-header">
+                      <span>Sort by:</span>
+                      <button
+                        class="select-sort-header__current"
+                        type="button"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-controls="sortOptionsList"
+                      >
+                        Most Popular<span class="_icon-more-arrow"></span>
+                      </button>
+                      <ul class="select-sort-header__list" hidden>
+                        <li class="select-sort-header__item">
+                          <a href="#" class="select-sort-header__link">Most Popular</a>
+                        </li>
+                        <li class="select-sort-header__item">
+                          <a href="#" class="select-sort-header__link">Сheapest Products</a>
+                        </li>
+                        <li class="select-sort-header__item">
+                          <a href="#" class="select-sort-header__link">latest products</a>
+                        </li>
+                      </ul>
+                      <button
+                        aria-label="open filter"
+                        class="select-sort-header__filter _icon-filter"
+                        type="button"
+                      ></button>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="body-category__items products-grid">
                 <article class="body-category__item item-products">
                   <a href="product.html" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/10.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/10.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -262,7 +312,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/11.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/11.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -300,7 +350,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/02.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/02.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -319,7 +369,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/03.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/03.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -338,7 +388,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/04.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/04.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -357,7 +407,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/05.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/05.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -376,7 +426,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/06.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/06.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">
@@ -395,7 +445,7 @@
                 </article>
                 <article class="body-category__item item-products">
                   <a href="#" class="item-products__image-link">
-                    <img class="item-products__image ibg ibg--contain" src="img/products/07.png" alt="Image" />
+                    <img class="item-products__image" src="img/products/07.png" alt="Image" />
                   </a>
                   <div class="item-products__body">
                     <div class="item-products__title">

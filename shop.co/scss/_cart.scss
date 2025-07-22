@@ -1,22 +1,6 @@
 .cart {
-  padding-block-start: toRem(134);
   position: relative;
   transition: padding-block-start 0.5s;
-  .hidden & {
-    padding-block-start: toRem(96);
-  }
-  @media (max-width: $mobile) {
-    padding-block-start: toRem(126);
-    .hidden & {
-      padding-block-start: toRem(88);
-    }
-  }
-  @media (max-width: toEm(599.98)) {
-    padding-block-start: toRem(105);
-    .hidden & {
-      padding-block-start: toRem(67);
-    }
-  }
   // .cart__container
   &__container {
     padding-block-start: toRem(24);
