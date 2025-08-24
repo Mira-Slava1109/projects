@@ -3086,9 +3086,16 @@ body {
   -webkit-margin-after: 2rem;
           margin-block-end: 2rem;
 }
-@media (max-width: 28.125em) {
+@media (max-width: 31.25em) {
   .header-reviews {
-    gap: 0.5rem;
+    gap: 1.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 .header-reviews__title {
@@ -3147,6 +3154,20 @@ body {
     background-color: #d2d0d0;
   }
 }
+@media (max-width: 31.25em) {
+  .actions-reviews {
+    inline-size: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .actions-reviews .actions-reviews__button,
+  .actions-reviews .select-header {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
 .actions-reviews__filter {
   inline-size: 3rem;
   aspect-ratio: 1;
@@ -3189,11 +3210,6 @@ body {
 @media (max-width: 47.99875em) {
   .select-header {
     block-size: 2.5rem;
-  }
-}
-@media (max-width: 34.375em) {
-  .select-header {
-    display: none;
   }
 }
 .select-header__link-current {
