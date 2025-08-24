@@ -327,8 +327,10 @@
   justify-content: space-between;
   align-items: center;
   margin-block-end: toRem(32);
-  @media (max-width: $mobileSmall) {
-    gap: toRem(8);
+  @media (max-width: toEm(500)) {
+    gap: toRem(20);
+    flex-direction: column;
+    align-items: start;
   }
   // .header-reviews__title
   &__title {
@@ -360,6 +362,14 @@
       &:hover {
         background-color: #d2d0d0;
       }
+    }
+  }
+  @media (max-width: toEm(500)) {
+    inline-size: 100%;
+    justify-content: space-between;
+    .actions-reviews__button,
+    .select-header{
+      flex-grow: 1;
     }
   }
   // .actions-reviews__filtr
@@ -397,9 +407,6 @@
   justify-content: center;
   @media (max-width: $mobile) {
     block-size: toRem(40);
-  }
-  @media (max-width: toEm(550)) {
-    display: none;
   }
   // .select-header__link-current
   &__link-current {
@@ -491,6 +498,3 @@
   &__item {
   }
 }
-
-
-
