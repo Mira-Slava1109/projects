@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">Video Alchemist</div>
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">about</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">portfolio</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">testimonials</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <ul data-da=".about__container, 450, 1" class="menu__social social">
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank">
+                <img src="img/icons/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank">
+                <img src="img/icons/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" target="_blank">
+                <img src="img/icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="page">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__body">
+              <span class="hero__label" role="heading" aria-level="1">Jimmy Turner</span>
+              <h1 class="hero__title title title--big">Professional video editor</h1>
+              <div class="hero__text">Making your videos look more cool.</div>
+              <a href="#contact" class="hero__button button">lets talk</a>
+            </div>
+            <div class="hero__visual visual-hero">
+              <img data-da=".about__hero, 767.98, 0" class="visual-hero__image" src="img/hero/hero.png" alt="Hero" />
+              <img
+                class="visual-hero__lightning visual-hero__lightning--left"
+                src="img/hero/lightning-left.png"
+                alt="lightning"
+              />
+              <img
+                class="visual-hero__lightning visual-hero__lightning--right"
+                src="img/hero/lightning-right.png"
+                alt="lightning"
+              />
+            </div>
+            <div data-da=".about__hero, 767.98" class="hero__move-decor move-decor">
+              <div class="move-decor__item move-decor__item--left"></div>
+              <div class="move-decor__item move-decor__item--right"></div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container">
+            <div class="about__hero"></div>
+            <h2 class="about__title title title--center">About me</h2>
+            <div class="about__text">
+              <p>
+                Welcome to the cinematic realm of Jimmy, where creativity meets technology to craft visually stunning
+                narratives. With a passion for storytelling and a keen eye for detail, I embark on a journey to
+                transform ordinary footage into extraordinary visual experiences.
+              </p>
+            </div>
+            <div class="about__skills">
+              <ul class="about__list">
+                <li class="about__item">Cash cow editing</li>
+                <li class="about__item">Reels editng</li>
+                <li class="about__item">logo animation</li>
+                <li class="about__item">podcast edit</li>
+                <li class="about__item">Vlogs editing</li>
+                <li class="about__item">Cash cow editing</li>
+                <li class="about__item">Reels editng</li>
+                <li class="about__item">logo animation</li>
+                <li class="about__item">podcast edit</li>
+                <li class="about__item">Vlogs editing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="edits">
+          <div class="edits__container">
+            <h2 class="edits__title title">my best edits</h2>
+            <div class="edits__arrow">
+              <div class="edits__arrow-move"></div>
+            </div>
+            <div class="edits__slider edits-slider swiper">
+              <div class="edits-slider__wrapper swiper-wrapper">
+                <article class="edits__slide edits-slide swiper-slide">
+                  <a href="#" class="edits-slide__link" aria-label="Play Cash Cow video">
+                    <div class="edits-slide__body">
+                      <img class="edits-slide__thumb" src="img/edits/01.jpg" alt="Man typing on laptop" />
+                      <img class="edits-slide__play" src="img/edits/play.svg" alt="Icon play" />
+                    </div>
+                    <h3 class="edits-slide__title">CAsh cow</h3>
+                  </a>
+                </article>
+                <article class="edits__slide edits-slide swiper-slide">
+                  <a href="#" class="edits-slide__link" aria-label="Play Cash Cow video">
+                    <div class="edits-slide__body">
+                      <img class="edits-slide__thumb" src="img/edits/02.jpg" alt="Dollar with a face value of 100" />
+                      <img class="edits-slide__play" src="img/edits/play.svg" alt="Icon play" />
+                    </div>
+                    <h3 class="edits-slide__title">Reel</h3>
+                  </a>
+                </article>
+                <article class="edits__slide edits-slide swiper-slide">
+                  <a href="#" class="edits-slide__link" aria-label="Play Cash Cow video">
+                    <div class="edits-slide__body">
+                      <img class="edits-slide__thumb" src="img/edits/03.jpg" alt="Biker rides along the canyonyon" />
+                      <img class="edits-slide__play" src="img/edits/play.svg" alt="Icon play" />
+                    </div>
+                    <h3 class="edits-slide__title">Vlog</h3>
+                  </a>
+                </article>
+                <article class="edits__slide edits-slide swiper-slide">
+                  <a href="#" class="edits-slide__link" aria-label="Play Cash Cow video">
+                    <div class="edits-slide__body">
+                      <img class="edits-slide__thumb" src="img/edits/04.jpg" alt="Game console" />
+                      <img class="edits-slide__play" src="img/edits/play.svg" alt="Icon play" />
+                    </div>
+                    <h3 class="edits-slide__title">CAsh cow</h3>
+                  </a>
+                </article>
+                <article class="edits__slide edits-slide swiper-slide">
+                  <a href="#" class="edits-slide__link" aria-label="Play Cash Cow video">
+                    <div class="edits-slide__body">
+                      <img class="edits-slide__thumb" src="img/edits/05.jpg" alt="A man in a recording studio" />
+                      <img class="edits-slide__play" src="img/edits/play.svg" alt="Icon play" />
+                    </div>
+                    <h3 class="edits-slide__title">CAsh cow</h3>
+                  </a>
+                </article>
+                <article class="edits__slide edits-slide swiper-slide">
+                  <a href="#" class="edits-slide__link" aria-label="Play Cash Cow video">
+                    <div class="edits-slide__body">
+                      <img class="edits-slide__thumb" src="img/edits/06.jpg" alt="Two chipmunk" />
+                      <img class="edits-slide__play" src="img/edits/play.svg" alt="Icon play" />
+                    </div>
+                    <h3 class="edits-slide__title">podcast</h3>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/dynamic_adapt.js"></script>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>

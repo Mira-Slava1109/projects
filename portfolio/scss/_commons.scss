@@ -1,0 +1,51 @@
+.title {
+  position: relative;
+  @include adaptiveValue("font-size", 60, 24);
+  line-height: 116.7%; /* 70/60 */
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  @include adaptiveValue("padding-block-end", 20, 4);
+  @include adaptiveValue("padding-inline-end", 100, 22);
+  // padding-block-end: toRem(20);
+  // padding-inline-end: toRem(100);
+  &::after {
+    content: "";
+    inline-size: 100%;
+    block-size: toRem(1);
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    background: $gradientTitle;
+  }
+  //.title--big
+  &--big {
+    @include adaptiveValue("font-size", 80, 28, 0, $containerWidth, 500);
+    padding: 0;
+    &::after {
+      content: none;
+    }
+  }
+  // .title--center
+  &--center {
+    @include adaptiveValue("padding-inline", 50, 20);
+  }
+}
+.button {
+  @include adaptiveValue("block-size", 50, 36);
+  @include adaptiveValue("inline-size", 253, 173);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: toRem(20);
+  background-color: $purpleColor;
+  font-family: "Orbitron";
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: background-color 0.5s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $purpleColorHover;
+    }
+  }
+}
