@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "img": "img/products/01.png",
+    "name": "T-shirt with Tape Details",
+    "price": 120,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 4.5,
+    "category": "new-arrivals"
+  },
+  {
+    "id": 2,
+    "img": "img/products/02.png",
+    "name": "Skinny Fit Jeans",
+    "price": 240,
+    "oldPrice": 260,
+    "discount": "-20%",
+    "rating": 3.5,
+    "category": "new-arrivals"
+  },
+  {
+    "id": 3,
+    "img": "img/products/03.png",
+    "name": "Checkered Shirt",
+    "price": 180,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 4.5,
+    "category": "new-arrivals"
+  }, 
+  {
+    "id": 4,
+    "img": "img/products/04.png",
+    "name": "Sleeve Striped T-Shirt",
+    "price": 130,
+    "oldPrice": 160,
+    "discount": "-30%",
+    "rating": 4.5,
+    "category": "new-arrivals"
+  },
+  {
+    "id": 5,
+    "img": "img/products/10.png",
+    "name": "Gradient Graphic T-shirt",
+    "price": 145,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 3.5,
+    "category": "new-arrivals"
+  },
+  {
+    "id": 6,
+    "img": "img/products/09.png",
+    "name": "Polo with Contrast Trims",
+    "price": 145,
+    "oldPrice": 212,
+    "discount": "-20%",
+    "rating": 4.0,
+    "category": "new-arrivals"
+  },
+  {
+    "id": 7,
+    "img": "img/products/11.png",
+    "name": "Polo with Tipping Details",
+    "price": 180,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 4.5,
+    "category": "new-arrivals"
+  },
+  {
+    "id": 8,
+    "img": "img/products/05.png",
+    "name": "Vertical Striped Shirt",
+    "price": 212,
+    "oldPrice": 232,
+    "discount": "-20%",
+    "rating": 5.0,
+    "category": "top-selling"
+  },
+  {
+    "id": 9,
+    "img": "img/products/06.png",
+    "name": "Courage Graphic T-shirt",
+    "price": 145,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 4.0,
+    "category": "top-selling"
+  },
+  {
+    "id": 10,
+    "img": "img/products/07.png",
+    "name": "Loose Fit Bermuda Shorts",
+    "price": 80,
+    "oldPrice": null,
+    "discount": null,
+    "rating":3.0,
+    "category": "top-selling"
+  },
+  {
+    "id": 11,
+    "img": "img/products/08.png",
+    "name": "Faded Skinny Jeans",
+    "price": 120,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 4.5,
+    "category": "top-selling"
+  },
+  {
+    "id": 12,
+    "img": "img/products/09.png",
+    "name": "Polo with Contrast Trims",
+    "price": 145,
+    "oldPrice": 212,
+    "discount": "-20%",
+    "rating": 4.0,
+    "category": "top-selling"
+  },  
+  {
+    "id": 13,
+    "img": "img/products/10.png",
+    "name": "Gradient Graphic T-shirt",
+    "price": 145,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 3.5,
+    "category": "top-selling"
+  },  
+  {
+    "id": 14,
+    "img": "img/products/09.png",
+    "name": "Polo with Contrast Trims",
+    "price": 145,
+    "oldPrice": 212,
+    "discount": "-20%",
+    "rating": 4.0,
+    "category": "like"
+  },  
+  {
+    "id": 15,
+    "img": "img/products/10.png",
+    "name": "Gradient Graphic T-shirt",
+    "price": 145,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 3.5,
+    "category": "like"
+  },  
+  {
+    "id": 16,
+    "img": "img/products/11.png",
+    "name": "Polo with Tipping Details",
+    "price": 180,
+    "oldPrice": null,
+    "discount": null,
+    "rating": 4.5,
+    "category": "like"
+  },  
+  {
+    "id": 17,
+    "img": "img/products/12.png",
+    "name": "Black Striped T-shirt",
+    "price": 120,
+    "oldPrice": 150,
+    "discount": "-30%",
+    "rating": 5.0,
+    "category": "like"
+  }
+]
