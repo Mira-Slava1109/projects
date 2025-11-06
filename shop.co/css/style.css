@@ -3630,6 +3630,10 @@ body {
   -webkit-padding-after: 1.5rem;
           padding-block-end: 1.5rem;
 }
+.noUi-handle-upper .noUi-value {
+  left: 0rem;
+}
+
 .header-body-category__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

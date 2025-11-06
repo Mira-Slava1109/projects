@@ -284,18 +284,20 @@
     &::before {
       font-size: toRem(11);
     }
-    &.active { // Реагуємо на клас 'active'
+    &.active {
+      // Реагуємо на клас 'active'
       transform: scale(1, 1); // Перевернутий стан
     }
   }
-
-
 }
 .filter-price {
   padding-block-end: toRem(24);
   // .filter-price__range
   &__range {
   }
+}
+.noUi-handle-upper .noUi-value {
+  left: toRem(0);
 }
 //========================================================================================================================================================
 .header-body-category {
